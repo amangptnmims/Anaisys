@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        'slide-up': 'slide-up 0.8s ease-out forwards',
+        'slide-up': 'slide-up 1.0s ease-out forwards',
       },
       keyframes: {
         'slide-up': {

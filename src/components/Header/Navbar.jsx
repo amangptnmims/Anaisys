@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Desktop Menu - Center aligned */}
       <nav className="hidden md:block">
-        <ul className="flex items-center space-x-4 md:space-x-10 text-sm font-medium text-white">
+      <ul className="flex items-center justify-center w-full space-x-4 md:space-x-10 text-sm font-medium text-white">
           {navItems.map((item) => (
             <li 
               key={item.name} 
