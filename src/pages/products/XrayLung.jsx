@@ -1,4 +1,11 @@
+import { useNavigate } from 'react-router-dom';
+
 const XrayLung = () => {
+  const navigate = useNavigate();
+
+  const handleTryNowClick = () => {
+    navigate('/try-xray-form'); // Route to your form page
+  };
   return (
     <div className="container mx-auto px-4 py-8 md:px-6 md:py-12">
       {/* Header Section */}
@@ -63,7 +70,10 @@ const XrayLung = () => {
               ></video>
             </div>
             <div className="text-center space-y-4">
-              <button className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition duration-300">
+            <button 
+                onClick={handleTryNowClick}
+                className="w-full md:w-auto px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition duration-300"
+              >
                 Try AnAI-Xray Lung Now
               </button>
               <p className="text-sm text-gray-500">

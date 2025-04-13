@@ -7,12 +7,14 @@ import Features from './components/Features';
 // Import all page components
 import ProductsPage from './pages/ProductsPage';
 import XrayLung from './pages/products/XrayLung';
+import TryXrayForm from './components/TryXrayForm';
 import CtLung from './pages/products/CtLung';
 import MriBrain from './pages/products/MriBrain';
 import Impact from './pages/Impact';
 import Evidence from './pages/Evidence';
 import Insights from './pages/Insights';
 import Contact from './pages/Contact';
+import AnaiXray from './components/AnaiXray';
 
 function App() {
   return (
@@ -34,6 +36,10 @@ function App() {
           <Route path="/products/xray-lung" element={<XrayLung />} />
           <Route path="/products/ct-lung" element={<CtLung />} />
           <Route path="/products/mri-brain" element={<MriBrain />} />
+
+           {/* Form Routes */}
+           <Route path="/try-xray-form" element={<TryXrayForm />} />
+            <Route path="/anai-xray" element={<AnaiXray />} />
           
           {/* Other Routes */}
           <Route path="/impact" element={<Impact />} />
